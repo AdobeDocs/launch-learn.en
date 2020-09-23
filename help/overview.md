@@ -10,15 +10,12 @@ Adobe Experience Platform Launch is the next generation of website tag and mobil
 ## What's New
 
 * **[Implement the Adobe Experience Cloud in websites with Launch (Tutorial)](https://docs.adobe.com/content/help/en/launch-learn/implementing-in-websites-with-launch/index.html)**
-    <br>
     *A step-by-step tutorial to learn how to implement Experience Cloud applications with Launch.*
 
 * **[Implement the Adobe Experience Platform Mobile SDK in Android Apps (Tutorial)](https://docs.adobe.com/content/help/en/launch-learn/implementing-in-mobile-android-apps-with-launch/index.html)**
-    <br>
     *A step-by-step tutorial to learn how to implement the Adobe Experience Platform Mobile SDK in Android&trade; apps with Launch.*
 
 * **[Implement the Adobe Experience Platform Mobile SDK in iOS Swift Apps (Tutorial)](https://docs.adobe.com/content/help/en/launch-learn/implementing-in-mobile-ios-swift-apps-with-launch/index.html)**
-    <br>
     *A step-by-step tutorial to learn how to implement the Adobe Experience Platform Mobile SDK in iOS Swift&trade; apps with Launch.*
 
 <!--

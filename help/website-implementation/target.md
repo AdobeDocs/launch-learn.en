@@ -224,6 +224,7 @@ For the time-being, custom parameters passed with at.js 2.x requests are not eas
 1. Click on the Network tab
 1. Filter the requests to `tt.omtrdc` (or your CNAME'd domain for Target requests)
 1. Expand the `Headers` > `Request Payload` > `execute.pageLoad.parameters` section to validate the `pageName` parameter and value
+   
 ![pageName parameter in the debugger](images/target-debugger-pageName-browser.png)
 
 <!--Now go to the **[!UICONTROL Target]** tab in the Debugger. Expand your client code and look at the requests. You should see the new `pageName` parameter passed in the request:
@@ -282,6 +283,7 @@ For the time-being, custom parameters passed with at.js 2.x requests are not eas
 1. Click on the Network tab
 1. Filter the requests to `tt.omtrdc` (or your CNAME'd domain for Target requests)
 1. Expand the `Headers` > `Request Payload` > `id.customerIds.0` section to validate the customer id settings and value:
+   
 ![customer id settings in the debugger](images/target-debugger-customerId-browser.png)
 
 <!--
@@ -502,6 +504,7 @@ For the time-being, custom parameters passed with at.js 2.x requests are not eas
 1. Filter the requests to `tt.omtrdc` (or your CNAME'd domain for Target requests)
 1. Click on the second request
 1. Expand the `Headers` > `Request Payload` > `execute.mboxes.0` section to validate the request name and the order parameters:
+
 ![order request settings in the debugger](images/target-debugger-orderConfirmPage-browser.png)
 
 <!--
