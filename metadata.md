@@ -1,15 +1,14 @@
 ---
-cloud: experience-cloud
-product: adobe experience platform launch
-solution-title: Documentation
-solution-hub-url: https://docs.adobe.com/content/help/en/launch/using/overview.html
-getting-started-title: Community
-getting-started-url: https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/ct-p/adobe-launch-community
+cloud: document-cloud
+solution-title: Document Cloud
+solution-hub-url: https://helpx.adobe.com/support/document-cloud.html
+getting-started-title: Getting Started
+getting-started-url: https://helpx.adobe.com/acrobat/get-started.html
 tutorials-title: Tutorials
-tutorials-url: /content/help/en/launch-learn/tutorials/overview.html
-git-repo: https://github.com/AdobeDocs/launch-learn.en
-index: yes
+tutorials-url: https://helpx.adobe.com/acrobat/tutorials.html
 mini-toc-levels: 2
+git-repo: https://github.com/AdobeDocs/document-cloud-learn.en
+index: yes
 ---
 
 # Metadata for internal use
@@ -25,3 +24,10 @@ The metadata.md file includes repo-level metadata that passes through to user gu
 | tutorials-url | Link to video tutorials--either helpx tutorials or KT tutorials |
 | mini-toc-levels | Determines the number of heading levels that appear in right rail. default is 2 |
 | git-repo | Specifies the location of the master repo for internal use |
+
+In TOC.md file
+
+| metadata | what it does |
+|--- |--- |
+| user-guide-title | Used in article header as link |
+| user-guide-url | Opens helpx hub page |
