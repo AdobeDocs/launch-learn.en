@@ -1,8 +1,8 @@
 ---
 user-guide-title: Implementing the Experience Cloud in Mobile Android Applications
-breadcrumb-title: Android Implementation Guide
+breadcrumb-title: Android Tutorial
 user-guide-url: /content/help/en/core-services-learn/implementing-in-mobile-android-apps-with-launch/index.html
-user-guide-description: Learn how to implement Adobe Experience Cloud solutions in Android apps.
+user-guide-description: Learn how to implement Adobe Experience Cloud solutions in Android apps with Experience Platform Launch.
 ---
 
 # Implementing the Experience Cloud in Mobile Android Applications {#implementing-in-mobile-android-apps-with-launch}

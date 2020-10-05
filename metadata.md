@@ -1,13 +1,15 @@
 ---
-cloud: document-cloud
-solution-title: Document Cloud
-solution-hub-url: https://helpx.adobe.com/support/document-cloud.html
-getting-started-title: Getting Started
-getting-started-url: https://helpx.adobe.com/acrobat/get-started.html
+cloud: experience platform
+product: launch
+solution: Experience Platform Launch
+solution-title: Documentation
+solution-hub-url: https://docs.adobe.com/content/help/en/launch/using/overview.html
+getting-started-title: Experience League
+getting-started-url: https://experienceleague.adobe.com/#recommended/solutions/experience-platform
 tutorials-title: Tutorials
-tutorials-url: https://helpx.adobe.com/acrobat/tutorials.html
+tutorials-url: /content/help/en/launch-learn/tutorials/overview.html
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/document-cloud-learn.en
+git-repo: https://github.com/AdobeDocs/launch-learn.en
 index: yes
 ---
 

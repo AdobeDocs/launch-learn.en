@@ -1,7 +1,7 @@
 ---
 user-guide-title: Implementing the Experience Cloud in Websites with Launch
-breadcrumb-title: Website Implementation Guide
-user-guide-description: Learn how to implement Adobe Experience Cloud solutions on a website.
+breadcrumb-title: Web Tutorial
+user-guide-description: Learn how to implement Adobe Experience Cloud solutions on a website with Experience Platform Launch.
 user-guide-url: /content/help/en/core-services-learn/implementing-in-websites-with-launch/index.html
 cloud: experience-cloud
 product: launch
