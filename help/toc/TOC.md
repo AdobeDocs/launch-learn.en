@@ -9,15 +9,15 @@ audience: end-user
 
 + [Overview](../overview.md)
 + Fundamentals{#fundamentals}
-  + [Overview and Create Properties](../launch-web/launch-overview-and-creating-properties.md)
-  + [Choose a Hosting Option](../launch-web/choosing-a-hosting-option-in-launch.md)
-  + [Use Environments](../launch-web/using-environments-in-launch.md)
-  + [Add and Configure Extensions](../launch-web/adding-and-configuring-launch-extensions.md)
-  + [Create Data Elements](../launch-web/creating-data-elements-in-launch.md)
-  + [Build Rules](../launch-web/building-rules-in-launch.md)
-  + [Build and Publish a Library](../launch-web/building-and-publishing-a-library-in-launch.md)
-  + [Users and Permissions](../launch-web/launch-users-and-permissions.md)
-  + [Migrate from Adobe Dynamic Tag Manager to Launch](../launch-web/migrate-from-dynamic-tag-manager-to-launch.md)
+  + [Overview and Create Properties](../fundamentals/launch-overview-and-creating-properties.md)
+  + [Choose a Hosting Option](../fundamentals/choosing-a-hosting-option-in-launch.md)
+  + [Use Environments](../fundamentals/using-environments-in-launch.md)
+  + [Add and Configure Extensions](../fundamentals/adding-and-configuring-launch-extensions.md)
+  + [Create Data Elements](../fundamentals/creating-data-elements-in-launch.md)
+  + [Build Rules](../fundamentals/building-rules-in-launch.md)
+  + [Build and Publish a Library](../fundamentals/building-and-publishing-a-library-in-launch.md)
+  + [Users and Permissions](../fundamentals/launch-users-and-permissions.md)
+  + [Migrate from Adobe Dynamic Tag Manager to Launch](../fundamentals/migrate-from-dynamic-tag-manager-to-launch.md)
 + Website Implementation{#web}
   + [Implement in Websites with Launch](https://docs.adobe.com/content/help/en/launch-learn/implementing-in-websites-with-launch/index.html)
 + Mobile Implementation{#mobile}
