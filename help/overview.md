@@ -38,7 +38,7 @@ Adobe Experience Platform Launch is the next generation of website tag and mobil
   </td>
   <td>
     <a href="https://docs.adobe.com/content/help/en/launch-learn/implementing-in-mobile-android-apps-with-launch/index.html">
-      <img alt="" src="assets/thumb_android.png" />
+      <img alt="Implement in Android apps with Launch" src="assets/thumb_android.png" />
     </a>
     <div>
       <a href="https://docs.adobe.com/content/help/en/launch-learn/implementing-in-mobile-android-apps-with-launch/index.html">
@@ -51,7 +51,7 @@ Adobe Experience Platform Launch is the next generation of website tag and mobil
   </td>
   <td>
     <a href="https://docs.adobe.com/content/help/en/launch-learn/implementing-in-mobile-ios-swift-apps-with-launch/index.html">
-      <img alt="" src="assets/thumb_swift.png" />
+      <img alt="Implement in iOS Swift apps with Launch" src="assets/thumb_swift.png" />
     </a>
     <div>
       <a href="https://docs.adobe.com/content/help/en/launch-learn/implementing-in-mobile-ios-swift-apps-with-launch/index.html">
