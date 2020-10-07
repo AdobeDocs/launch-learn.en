@@ -1,7 +1,7 @@
 ---
 cloud: experience platform
 product: launch
-solution: Experience Platform Launch
+solution: Experience Platform
 solution-title: Documentation
 solution-hub-url: https://docs.adobe.com/content/help/en/launch/using/overview.html
 getting-started-title: Experience League
