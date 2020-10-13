@@ -11,6 +11,7 @@ tutorials-url: /content/help/en/launch-learn/tutorials/overview.html
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/launch-learn.en
 index: yes
+type: Tutorial
 ---
 
 # Metadata for internal use

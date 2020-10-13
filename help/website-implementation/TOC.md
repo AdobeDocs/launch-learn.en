@@ -5,7 +5,6 @@ user-guide-description: Learn how to implement Adobe Experience Cloud solutions 
 user-guide-url: /content/help/en/core-services-learn/implementing-in-websites-with-launch/index.html
 cloud: experience-cloud
 product: launch
-type: Tutorial
 ---
 
 # Implementing the Experience Cloud in Websites with Launch {#implementing-in-websites-with-launch}
