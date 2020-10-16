@@ -3,7 +3,6 @@ title: Install the Adobe Mobile SDK in a Mobile Android app
 description: Learn how to get your Launch property's embed codes and implement them in your website. This lesson is part of the Implementing the Experience Cloud in Mobile Android Applications tutorial.
 seo-description:
 seo-title: Install the Adobe Mobile SDK in a Mobile Android app
-solution: Experience Cloud
 ---
 
 # Install the Mobile SDK

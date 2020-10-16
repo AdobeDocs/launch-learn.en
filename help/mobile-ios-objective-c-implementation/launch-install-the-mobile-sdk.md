@@ -3,7 +3,6 @@ title: Install the Adobe Mobile SDK in a Mobile iOS Objective-C app
 description: Learn how to get your Launch property's embed codes and implement them in your website. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Objective-C Applications tutorial.
 seo-description:
 seo-title: Install the Adobe Mobile SDK in a Mobile iOS Objective-C app
-solution: Experience Cloud
 ---
 
 # Install the Mobile SDK

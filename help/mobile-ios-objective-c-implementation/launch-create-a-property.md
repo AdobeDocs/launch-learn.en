@@ -3,7 +3,6 @@ title: Create a Launch Property for Mobile Apps
 description: Learn how to log into the Launch interface and create a mobile Launch property. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Objective-C Applications tutorial.
 seo-description:
 seo-title: Create a Launch Property for Mobile Apps
-solution: Experience Cloud
 ---
 
 # Create a Launch Property

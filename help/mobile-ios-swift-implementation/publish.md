@@ -3,7 +3,6 @@ title: Publish your Launch Property
 description: Learn how to publish your Launch property from the Development environment to the Staging and Production environments. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Swift Applications with Launch tutorial.
 seo-description:
 seo-title: Publish your Launch Property
-solution: Experience Cloud
 ---
 
 # Publish your Launch Property
