@@ -21,9 +21,9 @@ audience: end-user
 + Website Implementation{#web}
   + [Implement in Websites with Launch](https://docs.adobe.com/content/help/en/launch-learn/implementing-in-websites-with-launch/index.html)
 + Mobile Implementation{#mobile}
-  + [Implement in iOS Swift Apps](https://docs.adobe.com/content/help/en/launch-learn/implementing-in-mobile-ios-swift-apps-with-launch/index.html)
-  + [Implement in iOS Objective-C Apps](https://docs.adobe.com/content/help/en/launch-learn/implementing-in-mobile-ios-objective-c-apps-with-launch/index.html)
-  + [Implement in Android Apps](https://docs.adobe.com/content/help/en/launch-learn/implementing-in-mobile-android-apps-with-launch/index.html)
   + [Understanding the Mobile SDK](../launch-mobile/understanding-the-mobile-sdks.md)
   + [Create Mobile Properties](../launch-mobile/create-mobile-properties-in-launch.md)
   + [Use Dependency Managers](../launch-mobile/use-dependency-managers-with-mobile-sdk.md)
+  + [Implement in iOS Swift Apps](https://docs.adobe.com/content/help/en/launch-learn/implementing-in-mobile-ios-swift-apps-with-launch/index.html)
+  + [Implement in iOS Objective-C Apps](https://docs.adobe.com/content/help/en/launch-learn/implementing-in-mobile-ios-objective-c-apps-with-launch/index.html)
+  + [Implement in Android Apps](https://docs.adobe.com/content/help/en/launch-learn/implementing-in-mobile-android-apps-with-launch/index.html)
