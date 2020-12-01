@@ -1,6 +1,7 @@
 ---
 title: Adobe Experience Platform Launch Tutorials 
 description: A collection of how-to videos and tutorials to make you a power-user of Adobe Experience Platform Launch
+original-url: https://experienceleague.adobe.com/docs/core-services-learn/tutorials/overview.html
 ---
 
 # Adobe Experience Platform Launch Tutorials
