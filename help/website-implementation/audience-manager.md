@@ -9,7 +9,7 @@ feature: Extensions
 
 This lesson will guide you through the steps to enable Adobe Audience Manager using Server-Side Forwarding.
 
-[Adobe Audience Manager](https://docs.adobe.com/content/help/en/audience-manager/user-guide/aam-home.html) (AAM) provides industry-leading services for online audience data management, giving digital advertisers and publishers the tools they need to control and leverage their data assets to help drive sales success.
+[Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html) (AAM) provides industry-leading services for online audience data management, giving digital advertisers and publishers the tools they need to control and leverage their data assets to help drive sales success.
 
 ## Learning Objectives
 
@@ -31,7 +31,7 @@ In order to complete this lesson, you will need:
 
    ![You can use the Debugger to find the Audience Manager Subdomain on your actual website](images/aam-debugger-partner.png)
 
-If you don't already have Audience Manager implemented, please follow these instructions to [obtain your Audience Manager Subdomain](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html).
+If you don't already have Audience Manager implemented, please follow these instructions to [obtain your Audience Manager Subdomain](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html).
 
 ## Implementation Options
 
@@ -41,7 +41,7 @@ There are two ways to implement Audience Manager in a website:
 
 * **Client-Side DIL**&mdash;This approach is for customers who do not have Adobe Analytics. DIL code (Data Integration Library Code, the AAM JavaScript configuration code) sends data directly from the web page into Audience Manager.
 
-Since you have already deployed Adobe Analytics in this tutorial, you will deploy Audience Manager using Server-Side Forwarding. For a complete description and requirements list for Server-Side forwarding, please review the [documentation](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html), so that you are familiar with how it works, what is required, and how to validate.
+Since you have already deployed Adobe Analytics in this tutorial, you will deploy Audience Manager using Server-Side Forwarding. For a complete description and requirements list for Server-Side forwarding, please review the [documentation](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html), so that you are familiar with how it works, what is required, and how to validate.
 
 ## Enable Server-Side Forwarding
 
@@ -82,7 +82,7 @@ A configuration in the Adobe Analytics Admin Console is required to start forwar
 >
 >Since SSF needs to be enabled per report suite, don't forget to repeat this step for your real report suites when you are deploying SSF on your actual site's report suite.
 >
->Also, if the SSF option is grayed out, you will need to "map the report suite(s) to your Experience Cloud Org in order to enable the option. This is explained in [the documentation](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/report-suite-mapping.html).
+>Also, if the SSF option is grayed out, you will need to "map the report suite(s) to your Experience Cloud Org in order to enable the option. This is explained in [the documentation](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/report-suite-mapping.html).
 
 Once this step has been completed, and if you have the Adobe Experience Platform Identity Service enabled, data will be forwarded from Analytics to AAM. However, to complete the process so that the response comes back correctly from AAM to the page (and also to Analytics via the Audience Analytics feature), you must complete the following step in Launch as well. Don't worry, it's super easy.
 
@@ -104,7 +104,7 @@ This is the second of two steps for enabling SSF. You have already flipped the s
 
 1. Check the box to **[!UICONTROL Automatically share Analytics Data with Audience Manager]**. This will add the Audience Manager "Module" (code) to the Analytics `AppMeasurement.js` implementation.
 
-1. Add your “Audience Manager Subdomain” (also known as the “Partner Name,” “Partner ID,” or “Partner Subdomain”). Follow these instructions to [obtain your Audience Manager Subdomain](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html).
+1. Add your “Audience Manager Subdomain” (also known as the “Partner Name,” “Partner ID,” or “Partner Subdomain”). Follow these instructions to [obtain your Audience Manager Subdomain](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html).
 
 1. Click **[!UICONTROL Save to Library and Build]**
 

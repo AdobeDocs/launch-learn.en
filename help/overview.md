@@ -10,13 +10,13 @@ Adobe Experience Platform Launch is the next generation of website tag and mobil
 
 ## What's New
 
-* **[Implement the Adobe Experience Cloud in websites with Launch (Tutorial)](https://docs.adobe.com/content/help/en/launch-learn/implementing-in-websites-with-launch/index.html)**
+* **[Implement the Adobe Experience Cloud in websites with Launch (Tutorial)](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/index.html)**
     *A step-by-step tutorial to learn how to implement Experience Cloud applications with Launch.*
 
-* **[Implement the Adobe Experience Platform Mobile SDK in Android Apps (Tutorial)](https://docs.adobe.com/content/help/en/launch-learn/implementing-in-mobile-android-apps-with-launch/index.html)**
+* **[Implement the Adobe Experience Platform Mobile SDK in Android Apps (Tutorial)](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/index.html)**
     *A step-by-step tutorial to learn how to implement the Adobe Experience Platform Mobile SDK in Android&trade; apps with Launch.*
 
-* **[Implement the Adobe Experience Platform Mobile SDK in iOS Swift Apps (Tutorial)](https://docs.adobe.com/content/help/en/launch-learn/implementing-in-mobile-ios-swift-apps-with-launch/index.html)**
+* **[Implement the Adobe Experience Platform Mobile SDK in iOS Swift Apps (Tutorial)](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-ios-swift-apps-with-launch/index.html)**
     *A step-by-step tutorial to learn how to implement the Adobe Experience Platform Mobile SDK in iOS Swift&trade; apps with Launch.*
 
 
@@ -25,11 +25,11 @@ Adobe Experience Platform Launch is the next generation of website tag and mobil
 <table>
 <tr>
   <td>
-    <a href="https://docs.adobe.com/content/help/en/launch-learn/implementing-in-websites-with-launch/index.html">
+    <a href="https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/index.html">
       <img alt="Implement in Websites with Launch" src="assets/launch_referencearchitectureguides.png" />
     </a>
     <div>
-      <a href="https://docs.adobe.com/content/help/en/launch-learn/implementing-in-websites-with-launch/index.html">
+      <a href="https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/index.html">
     <strong>Implement in Websites with Launch</strong>
     </a>
     </div>
@@ -38,11 +38,11 @@ Adobe Experience Platform Launch is the next generation of website tag and mobil
     <p>
   </td>
   <td>
-    <a href="https://docs.adobe.com/content/help/en/launch-learn/implementing-in-mobile-android-apps-with-launch/index.html">
+    <a href="https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/index.html">
       <img alt="Implement in Android apps with Launch" src="assets/thumb_android.png" />
     </a>
     <div>
-      <a href="https://docs.adobe.com/content/help/en/launch-learn/implementing-in-mobile-android-apps-with-launch/index.html">
+      <a href="https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/index.html">
     <strong>Implement in Android&trade; Apps</strong>
     </a>
     </div>
@@ -51,11 +51,11 @@ Adobe Experience Platform Launch is the next generation of website tag and mobil
     <p>
   </td>
   <td>
-    <a href="https://docs.adobe.com/content/help/en/launch-learn/implementing-in-mobile-ios-swift-apps-with-launch/index.html">
+    <a href="https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-ios-swift-apps-with-launch/index.html">
       <img alt="Implement in iOS Swift apps with Launch" src="assets/thumb_swift.png" />
     </a>
     <div>
-      <a href="https://docs.adobe.com/content/help/en/launch-learn/implementing-in-mobile-ios-swift-apps-with-launch/index.html">
+      <a href="https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-ios-swift-apps-with-launch/index.html">
     <strong>Implement in iOS Swift&trade; Apps</strong>
     </a>
     </div>

@@ -9,7 +9,7 @@ feature: Extensions
 
 This lesson will guide you through the steps to implement Adobe Audience Manager into the Experience Platform Mobile SDK using Server-Side Forwarding.
 
-[Adobe Audience Manager](https://docs.adobe.com/content/help/en/audience-manager/user-guide/aam-home.html) (AAM) provides industry-leading services for online audience data management, giving digital advertisers and publishers the tools they need to control and leverage their data assets to help drive sales success.
+[Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html) (AAM) provides industry-leading services for online audience data management, giving digital advertisers and publishers the tools they need to control and leverage their data assets to help drive sales success.
 
 ## Learning Objectives
 
@@ -27,7 +27,7 @@ In order to complete this lesson, you will need:
 
 1. Admin access to Adobe Analytics so that you can enable Server-Side Forwarding for the report suite you are using for this tutorial. Alternatively, you can ask an existing admin at your organization to do this for you, following the instructions below.
 
-If you don't already have Audience Manager implemented, please follow these instructions to [obtain your Audience Manager Subdomain](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html).
+If you don't already have Audience Manager implemented, please follow these instructions to [obtain your Audience Manager Subdomain](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html).
 
 ## Implementation Options
 
@@ -78,7 +78,7 @@ A configuration in the Adobe Analytics Admin Console is required to start forwar
 >
 >Since SSF needs to be enabled per report suite, don't forget to repeat this step for your real report suites when you are deploying SSF in your actual app's report suite.
 >
->Also, if the SSF option is grayed out, you will need to "map the report suite(s) to your Experience Cloud Org in order to enable the option. This is explained in [the documentation](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/report-suite-mapping.html).
+>Also, if the SSF option is grayed out, you will need to "map the report suite(s) to your Experience Cloud Org in order to enable the option. This is explained in [the documentation](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/report-suite-mapping.html).
 
 This switch will start the actual forwarding of data to AAM, as long as you have the Adobe Experience Platform Identity Service implemented. The rest of SSF implementation happens in the code, which was handled in Launch when you checked the box in the Analytics extension to forward to AAM.
 

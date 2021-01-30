@@ -7,9 +7,9 @@ feature: Extensions
 
 # Add the Adobe Experience Platform Identity Service
 
-This lesson will guide your through the steps required to implement the [Adobe Experience Platform Identity Service extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html) and send customer ids.
+This lesson will guide your through the steps required to implement the [Adobe Experience Platform Identity Service extension](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html) and send customer ids.
 
-The [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html) sets a common visitor id across all Adobe solutions in order to power Experience Cloud capabilities such as audience-sharing between solutions.  You can also send your own customer ids to the Service to enable cross-device targeting and integrations with your Customer Relationship Management (CRM) system.
+The [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html) sets a common visitor id across all Adobe solutions in order to power Experience Cloud capabilities such as audience-sharing between solutions.  You can also send your own customer ids to the Service to enable cross-device targeting and integrations with your Customer Relationship Management (CRM) system.
 
 ## Learning Objectives
 
@@ -79,11 +79,11 @@ The Identity Service extension is one of the few Launch extensions that makes a 
     1. Look for the AMCV_ cookie on the right hand side. You might see several since have loaded the Luma site using both it's hardcoded Launch property as well as mapped to your own.
     ![Verify the AMCV_ cookie](images/idservice-AMCVCookie.png)
 
-That's it! You've added your first extension! For more details on the configuration options of the Identity Service, see [the documentation](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/function-vars.html).
+That's it! You've added your first extension! For more details on the configuration options of the Identity Service, see [the documentation](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html).
 
 ## Send Customer IDs
 
-Next, you will send a [Customer ID](https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html) to the Identity Service. This will allow you to [integrate your CRM](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/attributes.html) with the Experience Cloud as well as track visitors across devices.
+Next, you will send a [Customer ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) to the Identity Service. This will allow you to [integrate your CRM](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html) with the Experience Cloud as well as track visitors across devices.
 
 In the earlier lesson, [Add Data Elements, Rules, and Libraries](launch-data-elements-rules.md) you created a data element and used it in a rule. Now, you will use those same techniques to send a Customer ID when the visitor is authenticated.  
 
