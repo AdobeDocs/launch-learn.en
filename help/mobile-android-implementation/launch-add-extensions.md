@@ -2,8 +2,6 @@
 title: Add Extensions to a Mobile Launch property
 description: Learn how to add extensions to a mobile Launch property. This lesson is part of the Implementing the Experience Cloud in Mobile Android Applications tutorial.
 feature: Extensions
-kt: 
-thumbnail: 
 ---
 
 # Add Extensions
