@@ -1,8 +1,8 @@
 ---
 title: Implement Adobe Audience Manager with Launch
 description: Learn how to implement Adobe Audience Manager on your website using Server-Side Forwarding and Launch. This lesson is part of the Implementing the Experience Cloud in Mobile Android Applications tutorial.
-seo-description:
-seo-title: Implement Adobe Audience Manager with Launch
+solution: Experience Platform Launch, Mobile SDK, Audience Manager
+feature: Extensions
 ---
 
 # Add Adobe Audience Manager

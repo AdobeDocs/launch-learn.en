@@ -1,7 +1,7 @@
 ---
 cloud: experience platform
 product: launch
-solution: Experience Platform
+solution: Experience Platform Launch
 solution-title: Documentation
 solution-hub-url: https://docs.adobe.com/content/help/en/launch/using/overview.html
 getting-started-title: Experience League
@@ -12,6 +12,7 @@ mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/launch-learn.en
 index: yes
 type: Tutorial
+role: Developer, Data Engineer
 ---
 
 # Metadata for internal use

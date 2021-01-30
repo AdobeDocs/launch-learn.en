@@ -1,8 +1,8 @@
 ---
 title: Add Adobe Target
 description: Learn how to implement Adobe Target for advanced personalization use cases. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Objective-C Applications tutorial.
-seo-description:
-seo-title: Add Adobe Target
+solution: Experience Platform Launch, Mobile SDK, Target
+feature: Extensions
 ---
 
 # Add Adobe Target

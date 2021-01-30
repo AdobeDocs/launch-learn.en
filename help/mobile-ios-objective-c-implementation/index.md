@@ -1,8 +1,6 @@
 ---
 title: Implementing the Experience Cloud in Mobile iOS Objective-C Applications
 description: Implementing the Experience Cloud in Mobile iOS Objective-C Applications is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their mobile iOS Objective-C apps.
-seo-description:
-seo-title: Implementing the Experience Cloud in Mobile iOS Objective-C Applications 
 ---
 
 # Overview

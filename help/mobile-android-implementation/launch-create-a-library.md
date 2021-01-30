@@ -1,8 +1,7 @@
 ---
-title: Create a Library in Experience Platform Launch
+title: Create a Library
 description: Learn how to create a library in Adobe Experience Platform Launch. This lesson is part of the Implementing the Experience Cloud in Mobile Android Applications tutorial.
-seo-description:
-seo-title: Create a Library in Adobe Experience Platform Launch
+feature: Publishing
 ---
 
 # Add a Library

@@ -1,20 +1,13 @@
 ---
 title: Building Rules in Launch
-seo-title: Building Rules in Launch
-description: In this video, you will learn how to create rules, in order to execute commands for you in Launch, using your installed extensions. Rules include events and conditions to determine when to do stuff, and actions to determine what to do. 
-seo-description: In this video, you will learn how to create rules, in order to execute commands for you in Launch, using your installed extensions. Rules include events and conditions to determine when to do stuff, and actions to determine what to do.
-feature: Launch Rules
-topics: 
-audience: implementer
-activity: implement
-doc-type: feature video
-team: Technical Marketing
+description: This video shows how to create rules so you can execute commands in Launch. Events and conditions determine *when* to do stuff and actions determine *what* to do.
+feature: Rules
 kt: 3530
-
+thumbnail: 
 ---
 
 # Building Rules in Launch
 
-In this video, you will learn how to create rules, in order to execute commands for you in Launch, using your installed extensions. Rules include events and conditions to determine when to do stuff, and actions to determine what to do.
+This video shows how to create rules so you can execute commands in Launch. Events and conditions determine *when* to do stuff and actions determine *what* to do.
 
->[!VIDEO](https://video.tv.adobe.com/v/28730/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/28730/?quality=12&learn=on)

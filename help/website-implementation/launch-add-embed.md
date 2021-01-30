@@ -1,6 +1,7 @@
 ---
 title: Implement the Launch Embed Code
 description: Learn how to get your Launch property's embed codes and implement them in your website. This lesson is part of the Implementing the Experience Cloud in Websites with Launch tutorial.
+feature: Environments
 ---
 
 # Add the Launch Embed Code

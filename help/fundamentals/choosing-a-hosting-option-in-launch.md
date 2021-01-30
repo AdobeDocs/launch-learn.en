@@ -1,20 +1,13 @@
 ---
-title: Choosing a Hosting Option in Launch
-seo-title: Choosing a Hosting Option in Launch by Adobe
+title: Choose a Hosting Option
 description: Understand the options that you should consider as you are choosing a hosting option for the Launch libraries. 
-seo-description: Understand the options that you should consider as you are choosing a hosting option for the Adobe Launch libraries. 
-feature: Launch Hosting Options
-topics: 
-audience: implementer
-activity: implement
-doc-type: feature video
-team: Technical Marketing
+feature: Hosts
 kt: 3526
-
+thumbnail: 
 ---
 
-# Choosing a Hosting Option in Launch
+# Choose a Hosting Option
 
-Understand the options that you should consider as you are choosing a hosting option for the Launch libraries. 
+Understand the options that you should consider as you are choosing a hosting option for your Launch libraries. 
 
->[!VIDEO](https://video.tv.adobe.com/v/28728/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/28728/?quality=12&learn=on)
