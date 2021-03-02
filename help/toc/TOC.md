@@ -20,7 +20,7 @@ user-guide-description: A collection of how-to videos and tutorials to make you 
 + Website Implementation{#web}
   + [Implement in Websites with Launch](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/index.html)
 + Mobile Implementation{#mobile}
-  + [Understanding the Mobile SDK](../launch-mobile/understanding-the-mobile-sdks.md)
+  + [Overview](../launch-mobile/understanding-the-mobile-sdks.md)
   + [Create Mobile Properties](../launch-mobile/create-mobile-properties-in-launch.md)
   + [Use Dependency Managers](../launch-mobile/use-dependency-managers-with-mobile-sdk.md)
   + [Implement in iOS Swift Apps](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-ios-swift-apps-with-launch/index.html)
@@ -31,3 +31,4 @@ user-guide-description: A collection of how-to videos and tutorials to make you 
   + [Create a property](../launch-server-side/create-a-property.md)
   + [Set up Edge Configuration](../launch-server-side/set-up-edge-configuration.md)
   + [Add an extension](../launch-server-side/add-an-extension.md)
+  + [Create a rule](../launch-server-side/create-a-rule.md)
