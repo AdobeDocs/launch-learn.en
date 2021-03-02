@@ -1,7 +1,6 @@
 ---
 title: What is Adobe Experience Platform Launch Server Side?
 description: This video gives an overview of Adobe Experience Platform Launch Server Side.
-feature: Properties
 kt: 6419
 thumbnail: 331937
 ---

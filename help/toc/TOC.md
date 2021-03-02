@@ -28,3 +28,4 @@ user-guide-description: A collection of how-to videos and tutorials to make you 
   + [Implement in Android Apps](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/index.html)
 + Server Side{#server-side}
   + [Overview](../launch-server-side/overview.md)
+  + [Create a property](../launch-server-side/create-a-property.md)
