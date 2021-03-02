@@ -30,3 +30,4 @@ user-guide-description: A collection of how-to videos and tutorials to make you 
   + [Overview](../launch-server-side/overview.md)
   + [Create a property](../launch-server-side/create-a-property.md)
   + [Set up Edge Configuration](../launch-server-side/set-up-edge-configuration.md)
+  + [Add an extension](../launch-server-side/add-an-extension.md)
