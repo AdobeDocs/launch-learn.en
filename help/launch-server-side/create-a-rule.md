@@ -1,5 +1,5 @@
 ---
-title: How to create a rule in Adobe Experience Platform Launch Server Side
+title: Create a rule in Platform Launch Server Side
 description: This video shows how to create a rule in Adobe Experience Platform Launch Server Side.
 feature: Properties
 kt: 6423
