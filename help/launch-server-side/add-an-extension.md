@@ -6,7 +6,7 @@ kt: 6422
 thumbnail: 331941
 ---
 
-# Add an extension in Platform Launch Server Side
+# Add an extension in Adobe Experience Platform Launch Server Side
 
 This video shows how to add an extension in Adobe Experience Platform Launch Server Side. 
 
