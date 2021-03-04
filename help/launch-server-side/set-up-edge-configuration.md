@@ -1,5 +1,5 @@
 ---
-title: Set up Edge Configuration for Adobe Experience Platform Launch Server Side
+title: Set up Edge Configuration for Platform Launch Server Side
 description: This video shows how to set up Edge Configuration for Adobe Experience Platform Launch Server Side. 
 feature: Edge Configuration
 kt: 6421
