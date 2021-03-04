@@ -6,9 +6,9 @@ kt: 6420
 thumbnail: 331938
 ---
 
-# Create an Adobe Experience Platform Launch Server Side property
+# Create a rule in Adobe Experience Platform Launch Server Side
 
-This video shows how to create a property in Adobe Experience Platform Launch Server Side. 
+This video shows how to create a rule in Adobe Experience Platform Launch Server Side. 
 
 >[!VIDEO](https://video.tv.adobe.com/v/331938?quality=12&learn=on)
 

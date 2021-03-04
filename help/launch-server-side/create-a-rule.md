@@ -15,3 +15,5 @@ This video shows how to create a rule in Adobe Experience Platform Launch Server
 ## More Resources
 
 * [Experience Platform Launch Server Side documentation](https://experienceleague.adobe.com/docs/launch/using/server-side-info/server-side-overview.html)
+* [Download the Platform Debugger for Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
+* [Download Platform Debugger for Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
