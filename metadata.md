@@ -1,5 +1,5 @@
 ---
-cloud: experience platform
+cloud: Experience Platform
 product: launch
 solution: Experience Platform Launch
 feature-set: Launch
