@@ -3,9 +3,9 @@ title: Creating Mobile Properties in Experience Platform Launch
 description: To start implementing the SDK, you'll need to first create a mobile property in Adobe Experience Platform Launch. You'll setup configuration required by the Mobile Core and any extensions you add, and then publish the configuration into an Environment. When you implement the SDK in your app, you'll reference the Environment to get going. This video walks you through the process.
 feature: Properties
 kt: 
-thumbnail: 
+thumbnail:
+exl-id: c0bfdd5a-03f7-49db-9124-7d420a884048
 ---
-
 # Create Mobile Properties in Adobe Experience Platform Launch
 
 To start implementing the SDK, you'll need to first create a mobile property in Adobe Experience Platform Launch. You'll setup configuration required by the Mobile Core and any extensions you add, and then publish the configuration into an Environment. When you implement the SDK in your app, you'll reference the Environment to get going. This video walks you through the process.

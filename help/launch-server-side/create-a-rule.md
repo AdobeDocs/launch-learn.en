@@ -4,8 +4,8 @@ description: This video shows how to create a rule in Adobe Experience Platform 
 feature: Properties
 kt: 6423
 thumbnail: 331942
+exl-id: 35c76ce1-c7c0-47cc-bed8-86ab7656c824
 ---
-
 # Create a rule in Adobe Experience Platform Launch Server Side
 
 This video shows how to create a rule in Adobe Experience Platform Launch Server Side. 

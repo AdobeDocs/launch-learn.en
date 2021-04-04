@@ -2,8 +2,8 @@
 title: Adobe Experience Platform Launch Tutorials 
 description: A collection of how-to videos and tutorials to make you a power-user of Adobe Experience Platform Launch
 original-url: https://experienceleague.adobe.com/docs/core-services-learn/tutorials/overview.html
+exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
 ---
-
 # Adobe Experience Platform Launch Tutorials
 
 Adobe Experience Platform Launch is the next generation of website tag and mobile SDK management capabilities from Adobe. Experience Platform Launch gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. Use these videos and tutorials to help master this critical technology.

@@ -4,8 +4,8 @@ description: This video shows how to set up Edge Configuration for Adobe Experie
 feature: Edge Configuration
 kt: 6421
 thumbnail: 331939
+exl-id: 20e30a36-3d56-4d15-acb7-b1bd560bb94d
 ---
-
 # Set up Edge Configuration for Adobe Experience Platform Launch Server Side
 
 This video shows how to set up Edge Configuration for Adobe Experience Platform Launch Server Side. 

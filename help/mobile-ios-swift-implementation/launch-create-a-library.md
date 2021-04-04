@@ -2,8 +2,8 @@
 title: Create a Library in Adobe Experience Platform Launch
 description: Learn how to create a library in Adobe Experience Platform Launch. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Swift Applications tutorial.
 feature: Publishing
+exl-id: 13bcc345-1b15-4aa1-ac0b-6d56edeb0ac8
 ---
-
 # Add a Library
 
 In this lesson, you will create a library for your new Launch property. A library packages together all of the desired Launch settings and generates  the specific implementation instructions required to install the library in your mobile app.

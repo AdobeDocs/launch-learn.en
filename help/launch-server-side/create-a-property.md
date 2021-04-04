@@ -4,8 +4,8 @@ description: This video shows how to create a property in Adobe Experience Platf
 feature: Properties
 kt: 6420
 thumbnail: 331938
+exl-id: 63a578d3-1220-4588-b289-7310f4905d52
 ---
-
 # Create a property in Adobe Experience Platform Launch Server Side
 
 This video shows how to create a property in Adobe Experience Platform Launch Server Side. 

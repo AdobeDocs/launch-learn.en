@@ -4,8 +4,8 @@ description: This video shows how to set up an extension in Adobe Experience Pla
 feature: Extensions
 kt: 6422
 thumbnail: 331941
+exl-id: 00a0b2c5-8b71-446b-9b20-612a9efbca62
 ---
-
 # Add an extension in Adobe Experience Platform Launch Server Side
 
 This video shows how to add an extension in Adobe Experience Platform Launch Server Side. 

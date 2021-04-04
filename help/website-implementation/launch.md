@@ -1,8 +1,8 @@
 ---
 title: Create a Launch Property
 description: Learn how to log into the Launch interface and create a Launch property. This lesson is part of the Implementing the Experience Cloud in Websites with Launch tutorial.
+exl-id: f83d374a-a831-4598-b9d3-6f183224b589
 ---
-
 # Create a Launch Property
 
 In this lesson, you will create your first Launch property.
