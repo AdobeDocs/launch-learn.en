@@ -17,9 +17,9 @@ This tutorial uses the Platform Web SDK extension to send consent data to Platfo
 The prerequisites for using the Web SDK are listed [here](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/prerequisite.html?lang=en#fundamentals). 
  
 On that page, there's a requirement for an "Event Dataset" and, just like it sounds, this is a dataset to hold your experience event data. To send consent information with events, the [Privacy Details mixin](https://github.com/adobe/xdm/blob/master/docs/reference/mixins/experience-event/experienceevent-privacy.schema.md) needs to be added to your Experience Event schema:
- 
- 
- 
+
+![](./images/event-schema.png)
+
 For the Platform consent standard v2.0, we’ll also need access to Adobe Experience Profile to create an XDM Individual Profile schema and dataset. For a tutorial on schema creation, see [Create a schema using the Schema Editor](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=en#tutorials) and for the required Preference Details profile mixin see [XDM documentation](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/overview.html?lang=en).
 
 This tutorial assumes you have access to Platform Launch and have created a client-side Property with the Web SDK extension installed and a working library created and built for development. These topics are detailed and demonstrated in these documents:
@@ -44,7 +44,7 @@ For more information on these standards, see [Supporting customer consent prefer
  
 After we've installed the Platform Web SDK extension in a Platform Launch property, we can configure the options for addressing consent data on the extension configuration screen:
  
- 
+![](./images/pending.png)
  
 The "Privacy" section sets the consent level for the SDK if the user has not previously provided consent preferences. This sets the default state for consent and event data collection in the SDK. The chosen setting answers the question of “what should the SDK do if the user has not yet provided explicit consent preferences?”
  
@@ -81,7 +81,7 @@ Let's create a rule to demonstrate this. In your Platform Launch property, click
 
 Under "Consent Information", choose "Fill out a form". In this rule action, we’ll use the Web SDK to set consent for the Adobe 1.0 consent standard by filling in the form displayed:
  
- 
+![](./images/1-0-form.png)
  
 We can choose to pass "In", "Out", or "Provided by data element" with this Set Consent action. A data element here should resolve to “in” or “out”.
 
@@ -97,7 +97,7 @@ Version 2.0 of the Platform consent standard works with [XDM](https://experience
 
 We’ll create a custom code data element to pass data to the collect and metadata properties of the consents object shown in the schema below:
 
- 
+![](./images/collect-metadata.png)
 
 This Preference Details mixin contains fields for the [Consents & Preferences XDM data type](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html?lang=en#prerequisites) which will contain the consent preference data we send to Platform with the Platform Web SDK extension in our rule action. Currently, the only required properties to implement the Platform Consent Standard 2.0 are the collect value (val) and the metadata time value, highlighted above in red.
 
@@ -120,7 +120,7 @@ The time field should specify when the user last updated their consent preferenc
 
 Next, let’s click on Rules, and then the blue Add Rule button and enter the name “setConsent onLoad - Consent 2.0”. Let’s choose the Window Loaded event as our rule trigger, then click Add under Actions. Choose the Platform Web SDK Extension, and for Action Type, choose Set Consent. The Standard should be Adobe and Version should be 2.0. For Value, we’ll use the data element we just created that contains the collect and time values we need to send to Platform:
 
- 
+![](./images/2-0-form.png)
 
 To review this example action, we’re calling Set Consent from the Platform Web SDK extension and passing in the Standard and the Version from the form, while passing the values for collect and time from the data element we created earlier.
 
@@ -134,7 +134,7 @@ You can learn more about version 2.0 of the IAB Transparency and Consent Framewo
 
 To set the consent preference data using this standard, we need to add the Privacy Details mixin to our Experience Event schema in Platform:
 
- 
+![](./images/consentStrings.png)
 
 This mixin contains the consent preference fields required by the IAB TCF 2.0 standard. For more on schemas and mixins, see the [XDM System Overview](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en).
 
@@ -142,7 +142,7 @@ This mixin contains the consent preference fields required by the IAB TCF 2.0 st
  
 In order to send consent event data from Platform Launch using the IAB TCF 2.0 consent standard, we first set up an xdm data element with the required consent fields:
  
- 
+![](./images/data-element.png)
  
 In your Platform Launch client-side property, click on Data Elements and the blue "Add Data Element" button. We'll name this data element "xdm-consentStrings" for this example. These xdm fields will contain the user consent data required for the IAB TCF 2.0 standard.
  
@@ -208,7 +208,7 @@ Under GDPR Applies we'll use the other custom variable from our event and enter 
  
 Under GDPR Contains Personal Data, select the option to indicate whether or not the data for this user contains personal data. A data element here should resolve to true or false.
 
- 
+![](./images/data-element-2-0.png)
  
 Click the blue Save button to save the action and the blue Save (or Save to Library) button to save the rule. At this point you have successfully implemented the data element and rule in Platform Launch to set consent using the Web SDK extension with the IAB TCF 2.0 consent standard.
  
@@ -216,24 +216,25 @@ Click the blue Save button to save the action and the blue Save (or Save to Libr
  
 If you're using the [working library](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch-data-elements-rules.html?lang=en#use-the-working-library-feature) prerequisite, you have already saved these changes and built your development library:
  
- 
+![](./images/save-library.png)
  
 ### Step 4: Inspect and validate data collection
  
 On our site, we refresh the page and confirm the library build in the [Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) Chrome extension, in the Platform Launch menu section:
  
- 
+![](./images/build-date.png)
  
 We can also inspect the setConsent call for the Adobe 1.0 or 2.0 standards in the debugger Platform Web SDK section, by clicking on the POST Body line in the network request where you see {"consent":[{"value":{"general":"in"},"version…:
  
- 
+![](./images/inspect-consent-call.png)
  
 To validate the setConsent call and our rule for the IAB TCF 2.0 standard, we'll use the OneTrust consent banner on our test site to set our consent preferences and create the tcData described earlier:
  
- 
+![](./images/banner.png)
  
 After clicking "I Accept", we can inspect the setConsent call for the IAB TCF 2.0 standard in the debugger Platform Web SDK section, by clicking on the POST Body line in the network request where you see {"consent":[{"value":"someAlphaNumericCharacters….
- 
+
+![](./images/inspect-2-0.png)
  
 Here we see the data we set up earlier in our data elements and Platform Launch rule. The value property contains the encoded tcString data we saw earlier.
 
@@ -243,12 +244,11 @@ OneTrust, Sourcepoint and other CMPs that implement the IAB TCF 2.0 standard wil
 
 You may have noticed that we did not reference the "xdm-consentStrings" data element we created earlier in a data element field in either of our rules. This data element is for use when you need to send consent data with an Experience Event.
 
- 
+![](./images/consentStrings-data-element.png)
 
 Since this data element contains all of the fields required for the IAB TCF 2.0 standard, you can simply reference the data element when sending this xdm data with your Experience Events:
 
- 
-
+![](./images/consentStrings-reference.png)
 
 ## Conclusion
  
