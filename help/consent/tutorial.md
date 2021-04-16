@@ -24,9 +24,9 @@ For the Platform consent standard v2.0, we’ll also need access to Adobe Experi
 
 This tutorial assumes you have access to Platform Launch and have created a client-side Property with the Web SDK extension installed and a working library created and built for development. These topics are detailed and demonstrated in these documents:
 
-•	[Create or configure a property](https://experienceleague.adobe.com/docs/launch/using/admin/companies-and-properties.html?lang=en#create-or-configure-a-property)
-•	[Overview of libraries](https://experienceleague.adobe.com/docs/launch/using/publish/libraries.html?lang=en#publish)
-•	[Publishing overview](https://experienceleague.adobe.com/docs/launch/using/publish/overview.html?lang=en#publish)
+* [Create or configure a property](https://experienceleague.adobe.com/docs/launch/using/admin/companies-and-properties.html?lang=en#create-or-configure-a-property)
+* [Overview of libraries](https://experienceleague.adobe.com/docs/launch/using/publish/libraries.html?lang=en#publish)
+* [Publishing overview](https://experienceleague.adobe.com/docs/launch/using/publish/overview.html?lang=en#publish)
  
 We'll also use the [Platform Debugger](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) Chrome extension to inspect and validate our implementation.
  
@@ -48,10 +48,10 @@ After we've installed the Platform Web SDK extension in a Platform Launch proper
  
 The "Privacy" section sets the consent level for the SDK if the user has not previously provided consent preferences. This sets the default state for consent and event data collection in the SDK. The chosen setting answers the question of “what should the SDK do if the user has not yet provided explicit consent preferences?”
  
-•	In - Collect events that occur before the user provides consent preferences.
-•	Out - Drop events that occur before the user provides consent preferences.
-•	Pending - Queue events that occur before the user provides consent preferences.
-•	Provided by data element
+* In - Collect events that occur before the user provides consent preferences.
+* Out - Drop events that occur before the user provides consent preferences.
+* Pending - Queue events that occur before the user provides consent preferences.
+* Provided by data element
  
 If the default consent setting is "In", this tells the SDK that it should not wait for explicit consent and it should collect the events that occur before the user provides consent preferences. These preferences are typically handled and stored in a CMP.
 
@@ -93,16 +93,17 @@ Your Platform Launch rules can be triggered by a variety of built-in or custom [
 
 #### Setting Consent with the Platform Consent Standard 2.0
 
-Version 2.0 of the Platform consent standard works with [XDM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/understanding-the-xdm-system-and-experience-data-model.html?lang=en#schemas) data. It also requires adding a Privacy Details mixin to your profile schema in Platform. See Governance, privacy, and security in Platform for more information on the Adobe standard version 2.0 and this mixin.
+Version 2.0 of the Platform consent standard works with [XDM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/understanding-the-xdm-system-and-experience-data-model.html?lang=en#schemas) data. It also requires adding a Privacy Details mixin to your profile schema in Platform. See [Consent processing in Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html) for more information on the Adobe standard version 2.0 and this mixin.
 
 We’ll create a custom code data element to pass data to the collect and metadata properties of the consents object shown in the schema below:
 
  
 
-This Preference Details mixin contains fields for the Consents & Preferences XDM data type which will contain the consent preference data we send to Platform with the Platform Web SDK extension in our rule action. Currently, the only required properties to implement the Platform Consent Standard 2.0 are the collect value (val) and the metadata time value, highlighted above in red.
+This Preference Details mixin contains fields for the [Consents & Preferences XDM data type](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html?lang=en#prerequisites) which will contain the consent preference data we send to Platform with the Platform Web SDK extension in our rule action. Currently, the only required properties to implement the Platform Consent Standard 2.0 are the collect value (val) and the metadata time value, highlighted above in red.
 
 Let’s create a data element for this data. Click on Data Elements and the blue Add Data Element button. Let’s call this “xdm-consent 2.0” and using the Core extension, we’ll select a Custom Code type. You can enter or copy and paste the following data into the custom code editor window:
 
+```js
 var dateString = new Date().toISOString();
 
 return {
@@ -113,6 +114,7 @@ return {
     time: dateString
   }
 }
+```
 
 The time field should specify when the user last updated their consent preferences. We're creating a timestamp here as an example using a standard method on the JavaScript Date object. Click save to save the custom code and click save again to save the data element.
 
@@ -128,13 +130,13 @@ We now have two rules, one for each of the Platform Consent standards. In practi
  
 ## Using the Web SDK with the IAB TCF 2.0 Consent Standard 
  
-You can learn more about version 2.0 of the IAB Transparency and Consent Framework at the iab.europe website.
+You can learn more about version 2.0 of the IAB Transparency and Consent Framework at the [IAB Europe website](https://iabeurope.eu/transparency-consent-framework/).
 
 To set the consent preference data using this standard, we need to add the Privacy Details mixin to our Experience Event schema in Platform:
 
  
 
-This mixin contains the consent preference fields required by the IAB TCF 2.0 standard. For more on schemas and mixins, see the XDM System Overview.
+This mixin contains the consent preference fields required by the IAB TCF 2.0 standard. For more on schemas and mixins, see the [XDM System Overview](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en).
 
 ### Step 1: Create a Consent Data Element
  
@@ -148,26 +150,27 @@ In the Extension dropdown menu, choose "Platform Web SDK", and for Data Element 
  
 We'll set each of the consentStrings as follows:
  
-•	consentStandard:  IAB TCF
-•	consentStandardVersion:  2.0
-•	consentStringValue:  %IAB TCF Consent String%
-•	containsPersonalData:  False (chosen from the Select Value button)
-•	gdprApplies:  %IAB TCF Consent GDPR%
+* consentStandard:  IAB TCF
+* consentStandardVersion:  2.0
+* consentStringValue:  %IAB TCF Consent String%
+* containsPersonalData:  False (chosen from the Select Value button)
+* gdprApplies:  %IAB TCF Consent GDPR%
  
 The consentStandard and consentStandardVersion are both just strings of text for the standard we're using, which is IAB TCF version 2.0. The consentStringValue references a data element named "IAB TCF Consent String". The percent signs surrounding the text indicate the name of a data element, and we'll look at that in a moment. The containsPersonalData property indicates whether the IAB TCF 2.0 consent string contains any personal data with either "True" or "False". The gdprApplies field indicates either "true" for GDPR applies, "false" for GDPR does not apply, or "undefined" for unknown whether GDPR applies. Currently, the Web SDK will treat "undefined" as "true", so consent data sent with "gdprApplies: undefined" will be treated as if the visitor is located in an area where GDPR does apply.
 
-See the consent documentation for more on these properties and on IAB TCF 2.0 in Platform Launch.
+See the [consent documentation](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/iab-tcf/with-launch.html?lang=en#getting-started) for more on these properties and on IAB TCF 2.0 in Platform Launch.
  
 ### Step 2: Create a Rule to Set Consent with the IAB TCF 2.0 Standard
  
-Next, we create a rule to set consent with the Web SDK when consent data for this standard is set or changed by a website visitor. In this rule, we'll also see how to capture those consent change signals from a CMP like OneTrust or Sourcepoint.
+Next, we create a rule to set consent with the Web SDK when consent data for this standard is set or changed by a website visitor. In this rule, we'll also see how to capture those consent change signals from a CMP like [OneTrust](https://www.onetrust.com/products/cookie-consent/) or [Sourcepoint](https://www.sourcepoint.com/cmp/).
  
 #### Add a rule event
  
 Click on the Rules section in your Platform Launch property, then on the blue Add Rule button. Let's name the rule setConsent – IAB and click on Add under Events. Let's name this event tcfapi addEventListener and click on Open Editor to open the custom code editor.
  
 Copy and paste the following code into your editor window:
- 
+
+```js
 // Wait for window.__tcfapi to be defined, then trigger when the customer has completed their consent and preferences.
 function addEventListener() {
   if (window.__tcfapi) {
@@ -185,8 +188,9 @@ function addEventListener() {
   }
 }
 addEventListener();
+```
 
-This code simply creates and executes a function called addEventListener. The function checks to see if the window.__tcfapi object exists, and if it does, it adds an event listener according to the specifications of the API. You can read more about those specs in the IAB repo on GitHub. If this event listener is added successfully, and the website visitor has completed their consent and preferences choices, the code sets Platform Launch custom variables for the tcData tcString, and the indicator for GDPR regions. Again, to learn more about the IAB TCF, see the IAB website and GitHub repo for technical details. After setting those values, the code executes the trigger function which triggers this rule to run.
+This code simply creates and executes a function called addEventListener. The function checks to see if the window.__tcfapi object exists, and if it does, it adds an event listener according to the specifications of the API. You can read more about those specs in the [IAB repo](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework) on GitHub. If this event listener is added successfully, and the website visitor has completed their consent and preferences choices, the code sets Platform Launch custom variables for the tcData tcString, and the indicator for GDPR regions. Again, to learn more about the IAB TCF, see the IAB [website](https://iabeurope.eu/transparency-consent-framework/) and [GitHub repo](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework) for technical details. After setting those values, the code executes the trigger function which triggers this rule to run.
  
 If the window.__tcfapi object did not exist the first time this function was executed, the function will check for it again every 100 milliseconds, so the event listener can be added. The last line of code simply executes the addEventListener function defined in the lines of code above it.
 
@@ -198,7 +202,7 @@ Let's now set up the Set Consent rule action to use these values and send them t
 
 Click on Add in the Actions section. Under Extension, choose Platform Web SDK from the dropdown. Under Action Type, choose Set Consent. Let's name this action setConsent.
  
-In the action configuration under Consent Information, choose Fill out a form. For Standard, choose IAB TCF, and for Version enter 2.0. For the Value, we'll use the custom variable from our event and enter %IAB TCF Consent String% which comes from the tcData we captured in our rule event custom function above.
+In the action configuration under Consent Information, choose Fill out a form. For Standard, choose IAB TCF, and for Version enter 2.0. For the Value, we'll use the custom variable from our event and enter %IAB TCF Consent String% which comes from the [tcData](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/IAB%20Tech%20Lab%20-%20CMP%20API%20v2.md#tcdata) we captured in our rule event custom function above.
  
 Under GDPR Applies we'll use the other custom variable from our event and enter %IAB TCF Consent GDPR% which also comes from the tcData we captured in our rule event custom function above. If you know that GDPR definitely will or will not apply for visitors to this website, you can select Yes or No, as applicable, instead of using the custom variable (data element) choice. You could also use conditional logic in a data element to check if GDPR applies and return the appropriate value.
  
@@ -210,13 +214,13 @@ Click the blue Save button to save the action and the blue Save (or Save to Libr
  
 ### Step 3: Save to Library and Build
  
-If you're using the working library prerequisite, you have already saved these changes and built your development library:
+If you're using the [working library](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch-data-elements-rules.html?lang=en#use-the-working-library-feature) prerequisite, you have already saved these changes and built your development library:
  
  
  
 ### Step 4: Inspect and validate data collection
  
-On our site, we refresh the page and confirm the library build in the Debugger Chrome extension, in the Platform Launch menu section:
+On our site, we refresh the page and confirm the library build in the [Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) Chrome extension, in the Platform Launch menu section:
  
  
  
