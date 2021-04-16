@@ -12,3 +12,5 @@ kt: 7570
 This video shows you how to use the Adobe Experience Platform Web SDK to set consent values according to the Adobe standard 1.0 and 2.0.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332694/?quality=12&learn=on)
+
+See the documentation on [consent processing in Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html) for more information on using the Adobe standard.
