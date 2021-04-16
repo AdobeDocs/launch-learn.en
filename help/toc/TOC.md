@@ -32,3 +32,5 @@ user-guide-description: A collection of how-to videos and tutorials to make you 
   + [Set up Edge Configuration](../launch-server-side/set-up-edge-configuration.md)
   + [Add an extension](../launch-server-side/add-an-extension.md)
   + [Create a rule](../launch-server-side/create-a-rule.md)
++ Consent Data Processing{#consent}
+  + [Process CMP consent signals using the Platform Web SDK extension](../consent/tutorial.md)

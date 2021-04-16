@@ -4,7 +4,7 @@ description: Learn how to implement and activate consent data obtained from a Co
 role: Developer
 ---
 
-# Implement consent with a Consent Management Platform using the Web SDK
+# Implement consent with a Consent Management Platform using the Platform Web SDK extension
 
 Many legal privacy regulations have introduced requirements for active and specific consent when it comes to data collection, personalization, and other marketing use cases. In order to meet these requirements, Adobe Experience Platform allows you to capture consent information in individual customer profiles and use those preferences as a determining factor in how each customer’s data is used in downstream Platform workflows.  
 
@@ -55,7 +55,7 @@ The "Privacy" section sets the consent level for the SDK if the user has not pre
  
 If the default consent setting is "In", this tells the SDK that it should not wait for explicit consent and it should collect the events that occur before the user provides consent preferences. These preferences are typically handled and stored in a CMP.
 
-If the default consent setting is “Out”, this tells the SDK that it should not collect any events that occur before the user opt-in preferences are set. Visitor activity that occurs before setting the consent preference will not be included in any data sent by the SDK after consent is set.  For example, if I scroll and view a web page before I click on the consent banner, and this “Out” setting is used, that scroll activity and viewing time will not be sent if the user later provides explicit consent for data collection.
+If the default consent setting is “Out”, this tells the SDK that it should not collect any events that occur before the user opt-in preferences are set. Visitor activity that occurs before setting the consent preference will not be included in any data sent by the SDK after consent is set.  For example, if you scroll and view a web page before you select the consent banner, and this “Out” setting is used, that scroll activity and viewing time will not be sent if the user later provides explicit consent for data collection.
 
 If the default consent setting is "Pending", the SDK will queue any events that occur before the user provides consent preferences, so the events may be sent after consent preferences are set, and after the SDK is initially configured during a visit.
  
@@ -69,7 +69,7 @@ Please note: this configuration setting for the SDK is not persisted to users’
  
 To learn more about configuring the Web SDK extension see the [Platform Web SDK extension overview](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension.html?lang=en#configure-the-extension) and [Supporting customer consent preferences](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html).
  
-For this example, let’s choose the option for “Pending” and click the blue Save button to save our configuration settings.
+For this example, let’s choose the option for “Pending” and select **Save** to save our configuration settings.
 
 ### Step 2: Communicating Consent Preferences 
 
@@ -77,7 +77,7 @@ Now that we’ve set the default behavior of the SDK, we can use Platform Launch
 
 #### Setting Consent with the Platform Consent Standard 1.0
 
-Let's create a rule to demonstrate this. In your Platform Launch property, click on Rules, then on the blue Add Rules button. Let's name the Rule "setAdobeConsent" and click to add an Event. For the Event Type, choose "Window Loaded" which will trigger this rule whenever a page is loaded on our website. Next, under “Actions” click "Add" to open the action configuration screen. This is where we'll set the consent data. Click the "Extension" dropdown and select "Platform Web SDK", then click the "Action Type" and select "Set Consent".
+Let's create a rule to demonstrate this. In your Platform Launch property, select Rules, then on the blue Add Rules button. Let's name the Rule "setAdobeConsent" and select to add an Event. For the Event Type, choose "Window Loaded" which will trigger this rule whenever a page is loaded on our website. Next, under “Actions” select "Add" to open the action configuration screen. This is where we'll set the consent data. Select the "Extension" dropdown and select "Platform Web SDK", then select the "Action Type" and select "Set Consent".
 
 Under "Consent Information", choose "Fill out a form". In this rule action, we’ll use the Web SDK to set consent for the Adobe 1.0 consent standard by filling in the form displayed:
  
@@ -85,7 +85,7 @@ Under "Consent Information", choose "Fill out a form". In this rule action, we�
  
 We can choose to pass "In", "Out", or "Provided by data element" with this Set Consent action. A data element here should resolve to “in” or “out”.
 
-In this example, we'll select "In" to indicate the visitor has consented to allowing the Web SDK to send data to Platform. Click the blue "Keep Changes" button to save this action, then "Save" to save this rule.
+In this example, we'll select "In" to indicate the visitor has consented to allowing the Web SDK to send data to Platform. Select the blue "Keep Changes" button to save this action, then "Save" to save this rule.
 
 Note:  Once a website visitor has opted out, the SDK will not allow you to set the users consent to in.
  
@@ -101,7 +101,7 @@ We’ll create a custom code data element to pass data to the collect and metada
 
 This Preference Details mixin contains fields for the [Consents & Preferences XDM data type](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html?lang=en#prerequisites) which will contain the consent preference data we send to Platform with the Platform Web SDK extension in our rule action. Currently, the only required properties to implement the Platform Consent Standard 2.0 are the collect value (val) and the metadata time value, highlighted above in red.
 
-Let’s create a data element for this data. Click on Data Elements and the blue Add Data Element button. Let’s call this “xdm-consent 2.0” and using the Core extension, we’ll select a Custom Code type. You can enter or copy and paste the following data into the custom code editor window:
+Let’s create a data element for this data. Select Data Elements and the blue Add Data Element button. Let’s call this “xdm-consent 2.0” and using the Core extension, we’ll select a Custom Code type. You can enter or copy and paste the following data into the custom code editor window:
 
 ```js
 var dateString = new Date().toISOString();
@@ -116,15 +116,15 @@ return {
 }
 ```
 
-The time field should specify when the user last updated their consent preferences. We're creating a timestamp here as an example using a standard method on the JavaScript Date object. Click save to save the custom code and click save again to save the data element.
+The time field should specify when the user last updated their consent preferences. We're creating a timestamp here as an example using a standard method on the JavaScript Date object. Select save to save the custom code and select save again to save the data element.
 
-Next, let’s click on Rules, and then the blue Add Rule button and enter the name “setConsent onLoad - Consent 2.0”. Let’s choose the Window Loaded event as our rule trigger, then click Add under Actions. Choose the Platform Web SDK Extension, and for Action Type, choose Set Consent. The Standard should be Adobe and Version should be 2.0. For Value, we’ll use the data element we just created that contains the collect and time values we need to send to Platform:
+Next, let’s select Rules, and then the blue Add Rule button and enter the name “setConsent onLoad - Consent 2.0”. Let’s choose the Window Loaded event as our rule trigger, then select Add under Actions. Choose the Platform Web SDK Extension, and for Action Type, choose Set Consent. The Standard should be Adobe and Version should be 2.0. For Value, we’ll use the data element we just created that contains the collect and time values we need to send to Platform:
 
 ![](./images/2-0-form.png)
 
 To review this example action, we’re calling Set Consent from the Platform Web SDK extension and passing in the Standard and the Version from the form, while passing the values for collect and time from the data element we created earlier.
 
-Click the blue Save button, and again to save the rule.
+Select the blue Save button, and again to save the rule.
 
 We now have two rules, one for each of the Platform Consent standards. In practice, you will likely choose one standard across your site(s). Next, we’ll create an example using the IAB TCF 2.0 consent standard.
  
@@ -144,9 +144,9 @@ In order to send consent event data from Platform Launch using the IAB TCF 2.0 c
  
 ![](./images/data-element.png)
  
-In your Platform Launch client-side property, click on Data Elements and the blue "Add Data Element" button. We'll name this data element "xdm-consentStrings" for this example. These xdm fields will contain the user consent data required for the IAB TCF 2.0 standard.
+In your Platform Launch client-side property, select Data Elements and the blue "Add Data Element" button. We'll name this data element "xdm-consentStrings" for this example. These xdm fields will contain the user consent data required for the IAB TCF 2.0 standard.
  
-In the Extension dropdown menu, choose "Platform Web SDK", and for Data Element Type, choose "XDM Object". The xdm mapper should appear, allowing you to click on and expand the "consentStrings" item as shown in the screenshot above.
+In the Extension dropdown menu, choose "Platform Web SDK", and for Data Element Type, choose "XDM Object". The xdm mapper should appear, allowing you to select and expand the "consentStrings" item as shown in the screenshot above.
  
 We'll set each of the consentStrings as follows:
  
@@ -166,7 +166,7 @@ Next, we create a rule to set consent with the Web SDK when consent data for thi
  
 #### Add a rule event
  
-Click on the Rules section in your Platform Launch property, then on the blue Add Rule button. Let's name the rule setConsent – IAB and click on Add under Events. Let's name this event tcfapi addEventListener and click on Open Editor to open the custom code editor.
+Select the Rules section in your Platform Launch property, then on the blue Add Rule button. Let's name the rule setConsent – IAB and select Add under Events. Let's name this event tcfapi addEventListener and select Open Editor to open the custom code editor.
  
 Copy and paste the following code into your editor window:
 
@@ -194,13 +194,13 @@ This code simply creates and executes a function called addEventListener. The fu
  
 If the window.__tcfapi object did not exist the first time this function was executed, the function will check for it again every 100 milliseconds, so the event listener can be added. The last line of code simply executes the addEventListener function defined in the lines of code above it.
 
-To summarize, we created a function to check for the status of consent that a website visitor sets using a CMP (or custom) consent banner. When that consent preference is set, this code creates two custom variables (custom code data elements) that we can use in our rule action. After pasting the above code into the custom code editor window of our event, click the blue Save button to save the rule event.
+To summarize, we created a function to check for the status of consent that a website visitor sets using a CMP (or custom) consent banner. When that consent preference is set, this code creates two custom variables (custom code data elements) that we can use in our rule action. After pasting the above code into the custom code editor window of our event, select the blue Save button to save the rule event.
 
 Let's now set up the Set Consent rule action to use these values and send them to Platform. 
 
 #### Add a rule action
 
-Click on Add in the Actions section. Under Extension, choose Platform Web SDK from the dropdown. Under Action Type, choose Set Consent. Let's name this action setConsent.
+Select Add in the Actions section. Under Extension, choose Platform Web SDK from the dropdown. Under Action Type, choose Set Consent. Let's name this action setConsent.
  
 In the action configuration under Consent Information, choose Fill out a form. For Standard, choose IAB TCF, and for Version enter 2.0. For the Value, we'll use the custom variable from our event and enter %IAB TCF Consent String% which comes from the [tcData](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/IAB%20Tech%20Lab%20-%20CMP%20API%20v2.md#tcdata) we captured in our rule event custom function above.
  
@@ -210,7 +210,7 @@ Under GDPR Contains Personal Data, select the option to indicate whether or not 
 
 ![](./images/data-element-2-0.png)
  
-Click the blue Save button to save the action and the blue Save (or Save to Library) button to save the rule. At this point you have successfully implemented the data element and rule in Platform Launch to set consent using the Web SDK extension with the IAB TCF 2.0 consent standard.
+Select the blue Save button to save the action and the blue Save (or Save to Library) button to save the rule. At this point you have successfully implemented the data element and rule in Platform Launch to set consent using the Web SDK extension with the IAB TCF 2.0 consent standard.
  
 ### Step 3: Save to Library and Build
  
@@ -224,7 +224,7 @@ On our site, we refresh the page and confirm the library build in the [Debugger]
  
 ![](./images/build-date.png)
  
-We can also inspect the setConsent call for the Adobe 1.0 or 2.0 standards in the debugger Platform Web SDK section, by clicking on the POST Body line in the network request where you see `{"consent":[{"value":{"general":"in"},"version…`:
+We can also inspect the setConsent call for the Adobe 1.0 or 2.0 standards in the debugger Platform Web SDK section, by selecting on the POST Body line in the network request where you see `{"consent":[{"value":{"general":"in"},"version…`:
  
 ![](./images/inspect-consent-call.png)
  
@@ -232,7 +232,7 @@ To validate the setConsent call and our rule for the IAB TCF 2.0 standard, we'll
  
 ![](./images/banner.png)
  
-After clicking "I Accept", we can inspect the setConsent call for the IAB TCF 2.0 standard in the debugger Platform Web SDK section, by clicking on the POST Body line in the network request where you see `{"consent":[{"value":"someAlphaNumericCharacters…`.
+After selecting "I Accept", we can inspect the setConsent call for the IAB TCF 2.0 standard in the debugger Platform Web SDK section, by selecting on the POST Body line in the network request where you see `{"consent":[{"value":"someAlphaNumericCharacters…`.
 
 ![](./images/inspect-2-0.png)
  
