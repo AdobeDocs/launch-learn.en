@@ -150,11 +150,11 @@ In the Extension dropdown menu, choose "Platform Web SDK", and for Data Element 
  
 We'll set each of the consentStrings as follows:
  
-* consentStandard:  IAB TCF
-* consentStandardVersion:  2.0
-* consentStringValue:  %IAB TCF Consent String%
-* containsPersonalData:  False (chosen from the Select Value button)
-* gdprApplies:  %IAB TCF Consent GDPR%
+* **`consentStandard`**:  `IAB TCF`
+* **`consentStandardVersion`**:  `2.0`
+* **`consentStringValue`**:  `%IAB TCF Consent String%`
+* **`containsPersonalData`**:  `False` (chosen from the Select Value button)
+* **`gdprApplies`**:  `%IAB TCF Consent GDPR%`
  
 The consentStandard and consentStandardVersion are both just strings of text for the standard we're using, which is IAB TCF version 2.0. The consentStringValue references a data element named "IAB TCF Consent String". The percent signs surrounding the text indicate the name of a data element, and we'll look at that in a moment. The containsPersonalData property indicates whether the IAB TCF 2.0 consent string contains any personal data with either "True" or "False". The gdprApplies field indicates either "true" for GDPR applies, "false" for GDPR does not apply, or "undefined" for unknown whether GDPR applies. Currently, the Web SDK will treat "undefined" as "true", so consent data sent with "gdprApplies: undefined" will be treated as if the visitor is located in an area where GDPR does apply.
 
@@ -224,7 +224,7 @@ On our site, we refresh the page and confirm the library build in the [Debugger]
  
 ![](./images/build-date.png)
  
-We can also inspect the setConsent call for the Adobe 1.0 or 2.0 standards in the debugger Platform Web SDK section, by clicking on the POST Body line in the network request where you see {"consent":[{"value":{"general":"in"},"version…:
+We can also inspect the setConsent call for the Adobe 1.0 or 2.0 standards in the debugger Platform Web SDK section, by clicking on the POST Body line in the network request where you see `{"consent":[{"value":{"general":"in"},"version…`:
  
 ![](./images/inspect-consent-call.png)
  
@@ -232,7 +232,7 @@ To validate the setConsent call and our rule for the IAB TCF 2.0 standard, we'll
  
 ![](./images/banner.png)
  
-After clicking "I Accept", we can inspect the setConsent call for the IAB TCF 2.0 standard in the debugger Platform Web SDK section, by clicking on the POST Body line in the network request where you see {"consent":[{"value":"someAlphaNumericCharacters….
+After clicking "I Accept", we can inspect the setConsent call for the IAB TCF 2.0 standard in the debugger Platform Web SDK section, by clicking on the POST Body line in the network request where you see `{"consent":[{"value":"someAlphaNumericCharacters…`.
 
 ![](./images/inspect-2-0.png)
  
