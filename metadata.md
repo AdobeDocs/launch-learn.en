@@ -3,12 +3,6 @@ cloud: Experience Platform
 product: launch
 solution: Experience Platform Launch
 feature-set: Launch
-solution-title: Documentation
-solution-hub-url: https://experienceleague.adobe.com/docs/launch/using/overview.html
-getting-started-title: Experience League
-getting-started-url: https://experienceleague.adobe.com/#recommended/solutions/experience-platform
-tutorials-title: Tutorials
-tutorials-url: /content/help/en/launch-learn/tutorials/overview.html
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/launch-learn.en
 index: yes
