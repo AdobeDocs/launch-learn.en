@@ -32,9 +32,3 @@ user-guide-description: A collection of how-to videos and tutorials to make you 
   + [Set up Edge Configuration](../launch-server-side/set-up-edge-configuration.md)
   + [Add an extension](../launch-server-side/add-an-extension.md)
   + [Create a rule](../launch-server-side/create-a-rule.md)
-+ Consent Data Processing{#consent}
-  + [Introduction](../consent/intro.md)
-  + [Set consent values using the Adobe standard](../consent/set-consent-adobe.md)
-  + [Set consent values using the IAB TCF 2.0 standard](../consent/set-consent-iab.md)
-  + [Inspect and validate consent data](../consent/inspect.md)
-  + [Consent processing end-to-end tutorial](../consent/tutorial.md)
