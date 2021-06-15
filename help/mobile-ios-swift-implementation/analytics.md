@@ -125,7 +125,7 @@ ACPCore.trackState("state name", data: ["key": "value"])
 
 >[!NOTE]
 >
->In case you are familiar with "props and eVars" in Analytics, you will notice that these variable names are not in the SDK. All key/value data coming from the SDK will be sent as [contextData variables](https://experienceleague.adobe.com/docs/analytics/implementation/javascript-implementation/variables-analytics-reporting/context-data-variables.html), and as such will need to be mapped to props or eVars (or other variables) by using [Processing Rules](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) in the Analytics UI.
+>In case you are familiar with "props and eVars" in Analytics, you will notice that these variable names are not in the SDK. All key/value data coming from the SDK will be sent as [contextData variables](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html), and as such will need to be mapped to props or eVars (or other variables) by using [Processing Rules](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) in the Analytics UI.
 
 ### Additional Data-Sending Options
 

@@ -183,7 +183,7 @@ Next, you will collect the product id of the current Product Detail page with a 
 
 ### Add the Adobe Analytics Product String Extension
 
-If you are already familiar with Adobe Analytics implementations, you are probably familiar with the [products variable](https://experienceleague.adobe.com/docs/analytics/components/variables/dimensions-reports/reports-products.html). The products variable has a very specific syntax and gets used slightly different ways depending on the context. To help make the population of the products variable easier in Launch, three additional extensions have already been created in the Launch extension marketplace! In this section you will add an extension created by Adobe Consulting to use on the Product Detail page.
+If you are already familiar with Adobe Analytics implementations, you are probably familiar with the [products variable](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html). The products variable has a very specific syntax and gets used slightly different ways depending on the context. To help make the population of the products variable easier in Launch, three additional extensions have already been created in the Launch extension marketplace! In this section you will add an extension created by Adobe Consulting to use on the Product Detail page.
 
 **To add the add the `Adobe Analytics Product String` extension**
 
@@ -414,7 +414,7 @@ You are actually going to call two plug-ins in this code, but one of them is bui
 
 The purpose of this plug-in is to keep values from getting falsely duplicated in the code when a visitor refreshes a page or uses the browser's back button to go back to a page where a value was set. In this lesson, you will use it to keep the `clickthrough` event from being duplicated.
 
-The code for this plug-in is available in the [Analytics Documentation](https://experienceleague.adobe.com/docs/analytics/implementation/javascript-implementation/plugins/getvalonce.html), but it is included here for your ease of copy/paste.
+The code for this plug-in is available in the [Analytics Documentation](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html), but it is included here for your ease of copy/paste.
 
 1. Copy the following code
 

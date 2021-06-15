@@ -29,7 +29,7 @@ You should complete all of the previous lessons in this tutorial before followin
 
 ## Audiences
 
-[Audiences](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.htm) is part of the People Core Service and allows you to share audiences between solutions. For example you can create an audience in Audience Manager and use it to deliver personalized content with Target.
+[Audiences](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html) is part of the People Core Service and allows you to share audiences between solutions. For example you can create an audience in Audience Manager and use it to deliver personalized content with Target.
 
 The main requirements to implement A4T&mdash;which you have already done&mdash;are to:
 
