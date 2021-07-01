@@ -2,7 +2,7 @@
 user-guide-title: Implementing the Experience Cloud in Mobile iOS Swift Applications
 breadcrumb-title: iOS Swift Tutorial
 user-guide-url: /content/help/en/core-services-learn/implementing-in-mobile-ios-swift-apps-with-launch/index.html
-user-guide-description: Learn how to implement Adobe Experience Cloud solutions in mobile iOS Swift apps with Experience Platform Launch.
+user-guide-description: Learn how to implement Adobe Experience Cloud solutions in mobile iOS Swift apps with tags in Experience Platform.
 solution: Experience Platform Launch, Data Collection
 kt: 2196
 thumbnail: kt-2796.jpg
