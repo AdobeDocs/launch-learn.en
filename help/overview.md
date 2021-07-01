@@ -6,6 +6,16 @@ exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
 ---
 # Adobe Experience Platform Launch Tutorials
 
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being integrated into Adobe Experience Platform as a suite of data collection technologies. The content on this page might still use the old branding. The following table outlines the terms that have been updated:
+>| Previous term | Updated term |
+>|---|---|
+>| Platform Launch (Client Side) | [Tags](https://experienceleague.adobe.com/docs/launch/using/home.html) |
+>| Platform Launch Server Side | [Event forwarding](https://experienceleague.adobe.com/docs/launch/using/server-side-info/server-side-overview.html) |
+>| Edge configurations  |  [Datastreams](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html) |
+
 Adobe Experience Platform Launch is the next generation of website tag and mobile SDK management capabilities from Adobe. Experience Platform Launch gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. Use these videos and tutorials to help master this critical technology.
 
 ## What's New
