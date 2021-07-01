@@ -7,6 +7,15 @@ exl-id: bee792c3-17b7-41fb-a422-289ca018097d
 ---
 # Implement consent with a Consent Management Platform using the Platform Web SDK extension
 
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being integrated into Adobe Experience Platform as a suite of data collection technologies. The content on this page might still use the old branding. The following table outlines the terms that have been updated:
+>| Previous term | Updated term |
+>|---|---|
+>| Platform Launch (Client Side) | [Tags](https://experienceleague.adobe.com/docs/launch/using/home.html) |
+>| Platform Launch Server Side | [Event forwarding](https://experienceleague.adobe.com/docs/launch/using/server-side-info/server-side-overview.html) |
+>| Edge configurations  |  [Datastreams](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html) |
+
 Many legal privacy regulations have introduced requirements for active and specific consent when it comes to data collection, personalization, and other marketing use cases. In order to meet these requirements, Adobe Experience Platform allows you to capture consent information in individual customer profiles and use those preferences as a determining factor in how each customer’s data is used in downstream Platform workflows.  
 
 This tutorial demonstrates how to implement and activate consent data obtained from a Consent Management Platform (CMP) using the Platform Web SDK extension in Adobe Experience Platform Launch. We’ll do this using both of the Adobe standards and the IAB TCF 2.0 consent standard, with OneTrust or Sourcepoint as example CMPs.

@@ -7,6 +7,15 @@ exl-id: fff1fa5f-eb3c-4b7e-bda5-bd0a7dfeab43
 ---
 # How to Migrate from Adobe Dynamic Tag Manager to Adobe Experience Platform Launch
 
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being integrated into Adobe Experience Platform as a suite of data collection technologies. The content on this page might still use the old branding. The following table outlines the terms that have been updated:
+>| Previous term | Updated term |
+>|---|---|
+>| Platform Launch (Client Side) | [Tags](https://experienceleague.adobe.com/docs/launch/using/home.html) |
+>| Platform Launch Server Side | [Event forwarding](https://experienceleague.adobe.com/docs/launch/using/server-side-info/server-side-overview.html) |
+>| Edge configurations  |  [Datastreams](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html) |
+
 Migrating from Adobe Dynamic Tag Manager to Adobe Experience Platform Launch is a simple two-step process. This video walks through a live migration from Dynamic Tag Manager to Launch and the necessary decisions along the way.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25861?quality=12&learn=on)
