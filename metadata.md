@@ -2,7 +2,7 @@
 cloud: Experience Platform
 product: launch
 solution: Experience Platform Launch
-feature-set: Experience Platform Launch
+feature-set: Tags
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/launch-learn.en
 index: yes
