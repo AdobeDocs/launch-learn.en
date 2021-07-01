@@ -102,7 +102,7 @@ The Adobe Target extension supports all of the API familiar to users of our earl
    ![Go to the Extensions catalog and click Install to add the Target extension](images/mobile-extensions-catalog-installTarget.png)
 
 1. Your **[!UICONTROL Client Code]** will pre-populate.
-1. Leave the **[!UICONTROL Environment Id]** blank. This setting is used in conjunction with the [Hosts](https://docs.adobe.com/help/en/target/using/administer/hosts.html) feature in Adobe Target, which allows you to send the data to different reporting environments (e.g. Dev, Staging, Production). By default, the data will be sent to the Production environment.
+1. Leave the **[!UICONTROL Environment Id]** blank. This setting is used in conjunction with the [Hosts](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html) feature in Adobe Target, which allows you to send the data to different reporting environments (e.g. Dev, Staging, Production). By default, the data will be sent to the Production environment.
 1. Leave the **[!UICONTROL Target Workspace Property]** blank. This setting is used in conjunction with the Target Premium [Enterprise User Permissions](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html) feature.
 1. Leave the **[!UICONTROL Timeout]** set to 5 seconds. This setting controls how long the app should wait for the Target response before displaying default content.
 1. Click the **[!UICONTROL Save]** button
