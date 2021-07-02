@@ -8,6 +8,14 @@ exl-id: a2959553-2d6a-4c94-a7df-f62b720fd230
 
 In this lesson, you will implement the asynchronous embed code of your Launch property's Development environment. Along the way, you will learn about two main concepts of Launch&mdash;Environments and Embed Codes.
 
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being integrated into Adobe Experience Platform as a suite of data collection technologies. Several terminology changes have rolled out in the interface which you should be aware of while using this content:
+>
+> * Platform Launch (Client Side) is now **[[!DNL tags]](https://experienceleague.adobe.com/docs/launch/using/home.html)** 
+> * Platform Launch Server Side is now **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/launch/using/server-side-info/server-side-overview.html)** 
+> * Edge configurations  are now **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
+
 ## Learning Objectives
 
 At the end of this lesson, you will be able to:

@@ -8,6 +8,15 @@ exl-id: 89d6aa9c-126a-45f1-bf71-1e0ef62fbd78
 
 In this lesson, you will implement the Mobile SDK with the extensions and settings corresponding to your Launch property's Development environment.
 
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being integrated into Adobe Experience Platform as a suite of data collection technologies. Several terminology changes have rolled out in the interface which you should be aware of while using this content:
+>
+> * Platform Launch (Client Side) is now **[[!DNL tags]](https://experienceleague.adobe.com/docs/launch/using/home.html)** 
+> * Platform Launch Server Side is now **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/launch/using/server-side-info/server-side-overview.html)** 
+> * Edge configurations  are now **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
+
 ## Prerequisites
 
 In this lesson we will start adding code to the Bus Booking app, so if you haven't already done so:

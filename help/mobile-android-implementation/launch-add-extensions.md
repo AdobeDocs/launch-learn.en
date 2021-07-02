@@ -8,6 +8,16 @@ exl-id: 0492561c-a902-4433-9289-204db15e282c
 
 In this lesson, you will add extensions to your Launch property.
 
+
+
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being integrated into Adobe Experience Platform as a suite of data collection technologies. Several terminology changes have rolled out in the interface which you should be aware of while using this content:
+>
+> * Platform Launch (Client Side) is now **[[!DNL tags]](https://experienceleague.adobe.com/docs/launch/using/home.html)** 
+> * Platform Launch Server Side is now **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/launch/using/server-side-info/server-side-overview.html)** 
+> * Edge configurations  are now **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
+
 Launch is a platform that allows Adobe and third-party vendors to create extensions to make it easy to deploy their solutions through Launch. An extension is a package of code that extends the Launch interface and client functionality. Extensions give you the ability to choose only the parts of the Adobe Experience Platform Mobile SDK that you need for your specific app.  You can think of Launch as an operating system, and extensions are the apps you use to achieve your tasks.
 
 Since you will be implementing the Adobe solutions (e.g. Target, Analytics, and Audience Manager), you will add the necessary extensions required to support them.

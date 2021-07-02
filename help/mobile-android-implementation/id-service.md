@@ -11,6 +11,7 @@ The [Adobe Experience Platform Identity Service](https://experienceleague.adobe.
 
 The Identity Service is part of the Mobile Core extension, ***so you have already implemented it when you installed the Mobile SDK***! At present time, this tutorial does not include instructions for setting Customer Ids. Please see the documentation for details on [how to set Customer Ids](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/identity/identity-api-reference).
 
+
 ## Validation Steps
 
 To validate the calls to the Identity Service, run the sample app in Android Studio, open the Debug Console and look for the request and the response:
