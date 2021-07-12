@@ -1,7 +1,7 @@
 ---
 title: Users and Permissions
 description: This video shows how to use the Adobe Admin Console to control permissions in Launch, so that the right people have access to do the right things.
-role: Administrator
+role: Admin
 feature: Access Control
 kt: 3532
 thumbnail:
